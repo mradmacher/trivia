@@ -35,7 +35,11 @@ def get_filename(tags)
   filename = nil
   if title and tracknumber
     tracknumber = sprintf('%02d', tracknumber.to_i)
-    filename = "#{tracknumber}. #{title}"
+    title.gsub!(/[[:punct:]]/, ' ')
+    title.gsub!(/\s\s+/, ' ')
+    title.strip!
+    title = title.tr(' ', '_')
+    filename = "#{tracknumber}-#{title}"
   end
   filename
 end
@@ -48,7 +52,6 @@ Dir.glob('./*.flac').sort.each do |entry|
   track = []
   track << get_tag('TRACKNUMBER')
   track << get_tag('TITLE')
-  track << get_tag('DESCRIPTION')
   track.concat(get_tags)
   track.compact!
   puts "No track tags for #{entry}" if track.empty?
