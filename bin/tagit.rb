@@ -1,4 +1,3 @@
-require 'i18n'
 require 'fileutils'
 
 def get_tags
@@ -36,11 +35,7 @@ def get_filename(tags)
   filename = nil
   if title and tracknumber
     tracknumber = sprintf('%02d', tracknumber.to_i)
-    title = I18n.transliterate(title)
-    title.gsub!(/\W/, ' ')
-    title.gsub!(/\s\s+/, ' ')
-    title = title.downcase.tr(' ', '_')
-    filename = "#{tracknumber}-#{title}"
+    filename = "#{tracknumber}. #{title}"
   end
   filename
 end
