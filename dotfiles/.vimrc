@@ -14,6 +14,9 @@ syntax on
 
 set completefunc=syntaxcomplete#Complete
 
+set statusline+=%F
+set laststatus=2
+
 vmap <C-c> :<Esc>`>a<CR><Esc>mx`<i<CR><Esc>my'xk$v'y!xclip -selection c<CR>u
 map <Insert> :set paste<CR>i<CR><CR><Esc>k:.!xclip -o<CR>:set nopaste<CR>
 
