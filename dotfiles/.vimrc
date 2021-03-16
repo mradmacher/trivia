@@ -1,9 +1,13 @@
 set nocompatible
-set autoindent
-set smartindent
+
+" set autoindent
+" set smartindent
+set expandtab
 set tabstop=2
 set shiftwidth=2
-set expandtab
+set softtabstop=2
+set cindent cinkeys-=0#
+
 set showmatch
 set ruler
 set number
