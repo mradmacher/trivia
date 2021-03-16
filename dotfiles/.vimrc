@@ -12,13 +12,19 @@ set incsearch
 set enc=utf8
 syntax on
 
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+
 set completefunc=syntaxcomplete#Complete
 
 set statusline+=%F
 set laststatus=2
-
-vmap <C-c> :<Esc>`>a<CR><Esc>mx`<i<CR><Esc>my'xk$v'y!xclip -selection c<CR>u
-map <Insert> :set paste<CR>i<CR><CR><Esc>k:.!xclip -o<CR>:set nopaste<CR>
 
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
