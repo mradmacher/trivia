@@ -1,18 +1,18 @@
 set nocompatible
 
-" set autoindent
+set autoindent
 " set smartindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set cindent cinkeys-=0#
+" set cindent cinkeys-=0#
 
 set showmatch
 set ruler
 set number
 set incsearch
-"set virtualedit=all
+" set virtualedit=all
 set enc=utf8
 syntax on
 
