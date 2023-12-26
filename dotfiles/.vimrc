@@ -3,10 +3,11 @@ set nocompatible
 set autoindent
 " set smartindent
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=2 softtabstop=0 expandtab
 set softtabstop=2
 " set cindent cinkeys-=0#
+autocmd FileType go setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType rust setlocal shiftwidth=4 softtabstop=4 expandtab
 
 set showmatch
 set ruler
