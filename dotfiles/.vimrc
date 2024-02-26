@@ -6,12 +6,14 @@ set expandtab
 set tabstop=2 softtabstop=0 expandtab
 set softtabstop=2
 " set cindent cinkeys-=0#
-autocmd FileType go setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType rust setlocal shiftwidth=4 softtabstop=4 expandtab
 
 set showmatch
 set ruler
 set number
+set cursorline         
+hi cursorline cterm=NONE ctermbg=242
 set incsearch
 " set virtualedit=all
 set enc=utf8
