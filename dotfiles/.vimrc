@@ -8,6 +8,7 @@ set softtabstop=2
 " set cindent cinkeys-=0#
 autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType rust setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd BufNewFile,BufRead *.gohtml setlocal syntax=html
 
 set showmatch
 set ruler
