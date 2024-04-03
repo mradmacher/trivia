@@ -14,7 +14,7 @@ set showmatch
 set ruler
 set number
 set cursorline         
-hi cursorline cterm=NONE ctermbg=242
+hi cursorline cterm=NONE ctermbg=233
 set incsearch
 " set virtualedit=all
 set enc=utf8
