@@ -2,6 +2,11 @@ shell -${SHELL}
 #caption always "%S: [%n %t] %W"
 startup_message off
 
+bind h focus left
+bind j focus down
+bind k focus up
+bind l focus right
+
 # THIS IS THE PRETTY BIT
 #change the hardstatus settings to give an window list at the bottom of the
 ##screen, with the time and date and with the current window highlighted
