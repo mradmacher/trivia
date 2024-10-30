@@ -2,8 +2,7 @@ set nocompatible
 
 set autoindent
 " set smartindent
-set expandtab
-set tabstop=2 softtabstop=2 expandtab
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 " set cindent cinkeys-=0#
 autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType rust setlocal shiftwidth=4 softtabstop=4 expandtab
